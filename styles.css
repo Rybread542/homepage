@@ -3,3 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-header {
+
+}
+
+.hero-nav {
+    margin-top: 2rem;
+}
+
+.hero-nav-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-nav-items a {
+    padding: 0.5em 1em;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+
+
+
+
