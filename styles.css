@@ -14,6 +14,8 @@
 
 html {
     background-color: var(--sidebar-font-grey);
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 0.02em;
 }
 
 hero {
