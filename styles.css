@@ -1,7 +1,19 @@
+:root {
+    --dark-blue: rgb(30, 30, 73);
+    --lighter-dark-blue: rgb(48, 48, 126);
+    --sidebar-font-grey: rgb(235, 235, 235);
+    --sidebar-nav-grey: rgb(182, 182, 182);
+}
+
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: solid 1px red
+}
+
+html {
+    background-color: var(--sidebar-font-grey);
 }
 
 hero {
@@ -28,7 +40,81 @@ hero {
     padding: 0.5em 1em;
     border: 1px solid red;
     border-radius: 20px;
+    text-decoration: none;
+    color:black;
 }
+
+main {
+    display: flex;
+}
+
+aside {
+    position: sticky;
+    max-width: clamp(5em, 20%, 10em);
+    height:100vh;
+    top: 0;
+    background-color:var(--dark-blue);
+    color:var(--sidebar-font-grey);
+}
+
+.sidebar-top {
+
+}
+
+.sidebar-profile-img {
+    text-align: center;
+}
+
+.sidebar-profile-img img {
+    border: 3px solid var(--lighter-dark-blue);
+    border-radius: 50%;
+}
+
+.sidebar-bottom {
+    height:40%;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.sidebar-nav a {
+    text-decoration: none;
+    color: var(--sidebar-font-grey)
+}
+
+.main-content > * {
+    margin-bottom: 3em;
+}
+
+.main-content {
+    padding: 0 2em;
+}
+
+.about-section {
+
+}
+
+.education-work-wrapper {
+    display: flex;
+}
+
+.skills-section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: clamp(1em, 2em, 3em);
+}
+
+.work-samples-content {
+    display: flex;
+    flex-wrap:wrap;
+}
+
 
 
 
