@@ -1,5 +1,5 @@
 :root {
-    --dark-blue: rgb(30, 30, 73);
+    --dark-blue: rgb(25, 25, 71);
     --lighter-dark-blue: rgb(48, 48, 126);
     --sidebar-font-grey: rgb(235, 235, 235);
     --sidebar-nav-grey: rgb(182, 182, 182);
@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: solid 1px red
+    /* border: solid 1px red */
 }
 
 html {
@@ -20,13 +20,33 @@ html {
 
 hero {
     height: 100vh;
+    background: linear-gradient(0deg, var(--dark-blue) 20%, var(--lighter-dark-blue) 100%);
+    display: flex;
+}
+
+.hero-content {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    max-width: 70rem;
+    margin: auto;
 }
 
-.hero-header {
+.hero-img {
+    width: clamp(7em, 70%, 20em);
+}
 
+.hero-img img {
+    width:auto;
+    height:auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px 50px;
+}
+
+
+.hero-header {
+    color:var(--sidebar-font-grey)
 }
 
 .hero-nav {
@@ -40,7 +60,6 @@ hero {
 
 .hero-nav-items a {
     padding: 0.5em 1em;
-    border: 1px solid red;
     border-radius: 20px;
     text-decoration: none;
     color:black;
@@ -72,6 +91,10 @@ aside {
     border-radius: 50%;
 }
 
+.sidebar-info {
+    font-size: 0.80rem;
+}
+
 .sidebar-bottom {
     height:40%;
 }
@@ -95,6 +118,12 @@ aside {
 
 .main-content {
     padding: 0 2em;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+section div[class$="header"] {
+    margin-bottom: 1rem;
 }
 
 .about-section {
@@ -115,18 +144,47 @@ aside {
     margin-bottom: 1rem;
 }
 
+.work-section-item {
+    display:flex;
+    gap:1rem;
+}
 
 
 .skills-section-content {
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: clamp(1rem, 2rem, 3rem);
+    grid-gap: 1rem;
 }
 
 .work-samples-content {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+}
+
+.work-samples-item{
+    
+}
+
+.work-samples-item-content {
+    overflow: hidden;
+    width: clamp(4rem, 40%, 15rem);
+    display: inline-flex;
+    flex-direction: column;
+    border: 3px solid var(--lighter-dark-blue);
+    border-radius: 40px 20px 40px 20px;
+    background-color: var(--sidebar-nav-grey);
+    text-align: center;
+}
+
+.work-samples-item-content p {
+    padding: 0.25rem 1rem;
+}
+
+.work-samples-item-content img {
+    width: 100%;
+    height: 100%;
 }
 
 
