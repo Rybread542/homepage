@@ -56,8 +56,6 @@ hero {
     margin-top: 1rem;
     position:relative;
     right:1.5rem;
-    
-    
     border-radius: 20px 10px;
 }
 
@@ -65,8 +63,6 @@ hero {
     border-radius: 20px 10px;
     display: flex;
 }
-
-
 
 .hero-nav-items a {
     padding: 1em 2em;
@@ -104,20 +100,30 @@ aside {
 }
 
 .sidebar-top {
-
+    height: clamp(7rem, 30vh, 24rem);
 }
 
 .sidebar-profile-img {
     text-align: center;
+    padding: 0.5em 1em;
 }
 
 .sidebar-profile-img img {
-    border: 3px solid var(--lighter-dark-blue);
     border-radius: 50%;
 }
 
 .sidebar-info {
     font-size: 0.80rem;
+    padding: 0.5rem;
+    margin: 2em auto 0 auto;
+}
+
+.sidebar-info-item{
+    margin-bottom: 1em;
+}
+
+.sidebar-info-item p{
+    display: inline;
 }
 
 .sidebar-bottom {
@@ -127,14 +133,28 @@ aside {
 .sidebar-nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+
+.sidebar-nav-item {
+    transition: transform 0.5s;
+    background-color: var(--dark-blue);
+    padding: 4vh 0;
+    border-radius: 10px;
+}
+
+
+.sidebar-nav-item:hover{
+    transform: translateX(5px);
 }
 
 .sidebar-nav a {
     text-decoration: none;
-    color: var(--sidebar-font-grey)
+    color: var(--sidebar-font-grey);
+    padding: 2em;
 }
 
 .main-content > * {
@@ -199,7 +219,7 @@ section div[class$="header"] {
 
 .work-samples-item:hover {
     border-radius: 20px 40px 20px 40px;
-    transform: scale(1.09);
+    transform: scale(1.05);
 }
 
 .work-samples-item-content {
@@ -226,7 +246,7 @@ section div[class$="header"] {
 }
 
 .work-samples-item-content img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     
 }
 
