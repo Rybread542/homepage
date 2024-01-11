@@ -182,24 +182,39 @@ section div[class$="header"] {
 
 .education-work-wrapper {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+}
+
+.education-section {
+    flex-basis: clamp(10rem, 40%, 30rem);
+}
+
+.education-section-header {
+    margin: auto;
 }
 
 .work-section-content > *:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .work-section-item {
     display:flex;
-    gap:1rem;
+    gap:2rem;
 }
 
+li {
+    margin-left: 2rem;
+}
 
 .skills-section-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 1rem;
+}
+
+.skills-section-item h4 {
+    display: inline;
 }
 
 .work-samples-content {
