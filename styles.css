@@ -188,25 +188,66 @@ section div[class$="header"] {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 5rem;
-    max-width: clamp(30rem, 70%, 100rem);
+    gap:3rem;
+    max-width: clamp(40rem, 75%, 100rem);
 }
 
-.education-section {
-    flex:1;
+.education-extracur-wrapper {
+    
+}
+
+.education-section-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-section-item, .extracur-section-item {
+    background-color: var(--main-content-section);
+    padding:1.5rem;
+    border-radius: 40px 20px;
+}
+
+.education2 {
+    position: relative;
+    left: 2rem;
 }
 
 .education-section-header {
     margin: auto;
 }
 
-.work-section-content > *:not(:last-child) {
-    margin-bottom: 2rem;
+.extracur-section-content {
+    position:relative;
+    left: 2rem;
 }
+
+.extracur2 {
+    position:relative;
+    right: 2rem;
+}
+
 
 .work-section-item {
     display:flex;
     gap:2rem;
+    background-color: var(--main-content-section);
+    padding: 1.5rem 1.5rem;
+    border-radius: 40px 20px;
+}
+
+
+.work-item2 {
+    position: relative;
+    left: 4rem;
+}
+
+.work-item3 {
+    position: relative;
+    left: 8rem;
+}
+
+.work-section-item-text {
+    margin: auto;
 }
 
 .skills-section {
@@ -266,7 +307,7 @@ li {
     width: clamp(4rem, 40%, 15rem);
     transition: all 0.75s;
     border: 6px solid transparent;
-    border-radius: 40px 20px 40px 20px;
+    border-radius: 40px 20px;
     overflow: hidden;
 }
 
