@@ -23,9 +23,9 @@
                 </div>
                 <nav class="hero-nav">
                     <div class="hero-nav-items">
-                        <a href="" class="hero-link1">Link1</a>
-                        <a href="" class="hero-link2">Link2</a>
-                        <a href="" class="hero-link3">Link3</a>
+                        <a href="#about" class="hero-link1">About Me</a>
+                        <a href="#profile" class="hero-link2">Proficiencies</a>
+                        <a href="#work_samples" class="hero-link3">Work Samples</a>
                     </div>
                 </nav>
             </div>
@@ -35,11 +35,22 @@
     <main>
         <aside>
             <div class="sidebar-top">
-                <div class="sidebar-profile-img">
-                    <img src="pexels-photo-614810.png" style="width: 100px; height: 100px;" alt="literally me again">
+                <div class="img-name-wrapper">
+                    <div class="sidebar-profile-img">
+                        <img src="pexels-photo-614810.png" id="sidebar-img" alt="literally me again">
+                    </div>
+                    <div class="sidebar-name">
+                        <p>Ryan Yohe</p>
+                    </div>
                 </div>
 
                 <div class="sidebar-info">
+
+                    <div class="sidebar-info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Fort Collins, CO</p>
+                    </div>
+
                     <div class="sidebar-info-item">
                         <i class="fa-solid fa-phone"></i>
                         <p>(602) 555-5555</p>
@@ -47,51 +58,60 @@
 
                     <div class="sidebar-info-item">
                         <i class="fa-solid fa-envelope"></i>
-                        <p>hey@gmail.com</p>
+                        <p>yohe.17@buckeyemail.osu.edu</p>
                     </div>
 
                     <div class="sidebar-info-item">
                         <i class="fa-brands fa-discord"></i>
                         <p>ry.bread</p>
                     </div>
+
+                    <div class="sidebar-info-item resume">
+                        <a href="resume_1.pdf" id="resume-link" download="Resume-Ryan_Yohe">
+                            <i class="fa-solid fa-file-lines resume-icon"></i>
+                            <p>Resume</p>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="sidebar-bottom">
                 <nav class="sidebar-nav">
-                    <div class="sidebar-nav-item">
-                        <a href="">Link1</a>
-                    </div>
-                    <div class="sidebar-nav-item">
-                        <a href="">Link2</a>
-                    </div>
-                    <div class="sidebar-nav-item">
-                        <a href="">Link3</a>
-                    </div>
+                    <a href="#about" class="sidebar-nav-link">
+                        <div class="sidebar-nav-item">
+                            <p>About Me</p>
+                        </div>
+                    </a>
+                    <a href="#profile" class="sidebar-nav-link">
+                        <div class="sidebar-nav-item" >
+                            <p>Proficiencies</p>
+                        </div>
+                    </a>
+                    <a href="#work_samples" class="sidebar-nav-link">
+                        <div class="sidebar-nav-item" >
+                            <p>Work Samples</p>
+                        </div>
+                    </a>
                 </nav>
 
                 <div class="sidebar-socials">
-                    <a href="">
-                        <div class="sidebar-socials-item">
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="sidebar-socials-item">
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="sidebar-socials-item">
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="sidebar-socials-item">
-                        </div>
-                    </a>
+                    <div class="sidebar-socials-links">
+                        <a href="https://github.com/Rybread542" target="_blank">
+                            <div class="sidebar-socials-item">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/RyBread09" target="_blank">
+                            <div class="sidebar-socials-item">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </aside>
 
-        <div class="main-content">
+        <div class="main-content" id="about">
 
             <section class="about-section">
                 <div class="about-section-header">
@@ -154,13 +174,12 @@
 
                         <div class="work-section-item work-item1">
                             <div class="work-section-img">
-                                <img src="CSU-Ram-357.png" style="width:50px; height: 50px;" alt="">
+                                <img src="CSU-Ram-357.png" class="work-img" alt="CSU Rams">
                                 <h4>Colorado State University</h4>
                                 <p>Lorem, ipsum dolor. 2023-Present</p>
                             </div>
 
                             <div class="work-section-item-text">
-                                
                                 <ul>
                                     <li>Lorem ipsum dolor sit amet.</li>
                                     <li>Lorem ipsum dolor sit.</li>
@@ -171,7 +190,7 @@
 
                         <div class="work-section-item work-item2">
                                 <div class="work-section-img">
-                                    <img src="Colorado_Buffaloes_wordmark.png" style="width:50px; height: 50px;" alt="">
+                                    <img src="Colorado_Buffaloes_wordmark.png" class="work-img" alt="CU Boulder">
                                     <h4>University of Colorado at Boulder</h4>
                                 <p>Lorem, ipsum dolor. 2022</p>
                                 </div>
@@ -188,7 +207,7 @@
 
                         <div class="work-section-item work-item3">
                             <div class="work-section-img">
-                                <img src="ohio_state_buckeyes_logo_secondary_19752595.png" style="width:40px; height:50px;" alt="">
+                                <img src="ohio_state_buckeyes_logo_secondary_19752595.png" class="work-img" style="width:40px;" alt="OSU Logo">
                                 <h4>The Ohio State University</h4>
                                 <p>Lorem, ipsum dolor. 2019-2022</p>
                             </div>
@@ -206,9 +225,9 @@
                 </section>
             </div>
 
-            <section class="skills-section">
+            <section class="skills-section" id="profile">
                 <div class="skills-section-header">
-                    <h3>Skills</h3>
+                    <h3>Proficiencies</h3>
                 </div>
 
                 <div class="skills-section-content">
@@ -259,59 +278,6 @@
                 </div>
             </section>
 
-            <section class="work-samples-section">
-                <div class="work-samples-header">
-                    <h3>Work samples</h3>
-                </div>
-
-                <div class="work-samples-content">
-
-                    <div class="work-samples-item">
-                        <a href="google.com">
-                            <div class="work-samples-item-content">
-                                <div class="work-samples-img">
-                                    <img src="digital-innovation.jpg" alt="">
-                                </div>
-                                <p>Lorem, ipsum.</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="work-samples-item">
-                        <a href="google.com">
-                            <div class="work-samples-item-content">
-                                <div class="work-samples-img">
-                                    <img src="digital-innovation.jpg" alt="">
-                                </div>
-                                <p>Lorem, ipsum.</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="work-samples-item">
-                        <a href="google.com">
-                            <div class="work-samples-item-content">
-                                <div class="work-samples-img">
-                                    <img src="digital-innovation.jpg" alt="">
-                                </div>
-                                <p>Lorem, ipsum.</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="work-samples-item">
-                        <a href="google.com">
-                            <div class="work-samples-item-content">
-                                <div class="work-samples-img">
-                                    <img src="digital-innovation.jpg" alt="">
-                                </div>
-                                <p>Lorem, ipsum.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
             <section class="hobbies-section">
                 <div class="hobbies-section-header">
                     <h3>Other interests</h3>
@@ -320,6 +286,56 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, dignissimos! Voluptates at laboriosam recusandae alias ex, dicta consequuntur reiciendis, voluptatum similique fuga officiis praesentium eius.</p>
                 </div>
             </section>
+
+            <div class="work-samples-wrapper" id="work_samples">
+                <section class="work-samples-section">
+                    <div class="work-samples-header">
+                        <h3>Work samples</h3>
+                    </div>
+                    <div class="work-samples-content">
+                        <div class="work-samples-item">
+                            <a href="google.com">
+                                <div class="work-samples-item-content">
+                                    <div class="work-samples-img">
+                                        <img src="digital-innovation.jpg" alt="">
+                                    </div>
+                                    <p>Lorem, ipsum.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="work-samples-item">
+                            <a href="google.com">
+                                <div class="work-samples-item-content">
+                                    <div class="work-samples-img">
+                                        <img src="digital-innovation.jpg" alt="">
+                                    </div>
+                                    <p>Lorem, ipsum.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="work-samples-item">
+                            <a href="google.com">
+                                <div class="work-samples-item-content">
+                                    <div class="work-samples-img">
+                                        <img src="digital-innovation.jpg" alt="">
+                                    </div>
+                                    <p>Lorem, ipsum.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="work-samples-item">
+                            <a href="google.com">
+                                <div class="work-samples-item-content">
+                                    <div class="work-samples-img">
+                                        <img src="digital-innovation.jpg" alt="">
+                                    </div>
+                                    <p>Lorem, ipsum.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
         </div>
 
