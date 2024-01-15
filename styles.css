@@ -58,7 +58,6 @@ hero {
 
 .hero-nav {
     position: relative;
-    top: 1rem;
     right: 10.5rem;
     border-radius: 20px 10px;
 }
@@ -126,7 +125,7 @@ aside {
 #sidebar-img {
     border-radius: 50%;
     width: 100px;
-    height: 100px;
+    height: 110px;
 }
 
 .sidebar-info {
