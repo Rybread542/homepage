@@ -20,6 +20,7 @@ html {
     font-family: "Roboto Condensed", sans-serif;
     letter-spacing: 0.02em;
     font-size: clamp(0.75rem, 2vw, 1rem);
+    
 }
 
 hero {
@@ -205,6 +206,10 @@ aside {
     margin: 0 auto 6rem auto;
 }
 
+.main-content {
+    flex:1;
+}
+
 section div[class$="header"] {
     margin-bottom: 1rem;
 }
@@ -250,6 +255,10 @@ section div[class$="header"] {
 .education2 {
     position: relative;
     left: -2rem;
+}
+
+.education-years {
+    font-size: 0.8rem;
 }
 
 .extracur-section-content {
@@ -299,11 +308,11 @@ section div[class$="header"] {
 .skills-section-content {
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .skills-section-item {
     text-align: center;
+    
 }
 
 .skills-section-item h4 {
@@ -339,21 +348,14 @@ li {
     padding: 2rem 2rem 4rem 2rem;
 }
 
-.work-samples-section {
-    max-width: clamp(40rem, 80%, 100rem);
-    margin: auto;
-}
-
 .work-samples-content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 3rem;
-    margin: auto;
 }
 
 .work-samples-item {
-    width: clamp(4rem, 40%, 15rem);
     transition: all 0.75s;
     border: 6px solid transparent;
     border-radius: 40px 20px;
@@ -378,13 +380,15 @@ li {
     color: black;
 }
 
-.work-samples-item-content img {
-    width: 110%;
-    height: 110%;
+.work-samples-img img {
     transition: transform 0.3s;
+    height:12rem;
+    width:15rem;
+    flex:1;
 }
 
 .work-samples-img {
+    display: flex;
     overflow: hidden;
 }
 
